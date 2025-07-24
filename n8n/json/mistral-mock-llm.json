@@ -1,0 +1,22 @@
+{
+  "name": "mistral-mock-llm",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "mistral",
+        "responseMode": "lastNode",
+        "options": {},
+        "statusCode": 200,
+        "responseData": "{\"choices\":[{\"message\":{\"content\":\"Mock response from Mistral 7B\"}}]}"
+      },
+      "name": "Mock Mistral",
+      "type": "n8n-nodes-base.httpResponse",
+      "typeVersion": 1,
+      "position": [
+        600,
+        300
+      ]
+    }
+  ],
+  "connections": {}
+}

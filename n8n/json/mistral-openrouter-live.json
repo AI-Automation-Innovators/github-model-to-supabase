@@ -1,0 +1,23 @@
+{
+  "name": "mistral-openrouter-live",
+  "nodes": [
+    {
+      "parameters": {
+        "requestMethod": "POST",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "{\"model\": \"mistral-7b-instruct\", \"messages\": [{\"role\": \"user\", \"content\": \"Explain what Mistral 7B Instruct is\"}]}",
+        "headersJson": "{\"Authorization\": \"Bearer YOUR_OPENROUTER_API_KEY\", \"Content-Type\": \"application/json\"}"
+      },
+      "name": "Call Mistral via OpenRouter",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        600,
+        300
+      ]
+    }
+  ],
+  "connections": {}
+}
